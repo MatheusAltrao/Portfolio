@@ -9,8 +9,68 @@ import { Github, Linkedin } from 'lucide-react';
 import { Button } from './ui/button';
 import Link from 'next/link';
 import { Container, Engine } from 'tsparticles-engine';
+import { gsap } from 'gsap';
+import { useRef, useLayoutEffect } from 'react';
+import { link } from 'fs';
 
 const Hero = () => {
+    const title = useRef<HTMLDivElement | null>(null);
+    const subtitle = useRef<HTMLDivElement | null>(null);
+    const button1 = useRef<HTMLDivElement | null>(null);
+    const button2 = useRef<HTMLDivElement | null>(null);
+    const link1 = useRef<HTMLDivElement | null>(null);
+    const link2 = useRef<HTMLDivElement | null>(null);
+
+    useLayoutEffect(() => {
+        let ctx = gsap.context(
+            () => {
+                gsap.to(title.current, {
+                    opacity: 1,
+                    delay: 8,
+                    duration: 0.5,
+                });
+
+                gsap.to(subtitle.current, {
+                    opacity: 1,
+                    delay: 9,
+                    duration: 0.5,
+                });
+
+                gsap.to(button1.current, {
+                    opacity: 1,
+                    delay: 9.2,
+                    duration: 0.5,
+                });
+
+                gsap.to(button2.current, {
+                    opacity: 1,
+                    delay: 9.4,
+                    duration: 0.5,
+                });
+
+                gsap.to(link1.current, {
+                    opacity: 1,
+                    translateY: 0,
+                    delay: 10,
+                    duration: 0.8,
+                });
+
+                gsap.to(link2.current, {
+                    opacity: 1,
+                    translateY: 0,
+                    delay: 10.4,
+                    duration: 0.8,
+                });
+            },
+
+            title,
+        );
+
+        return () => {
+            ctx.revert();
+        };
+    }, []);
+
     const particlesInit = useCallback(async (engine: Engine) => {
         console.log(engine);
         await loadSlim(engine);
@@ -24,7 +84,7 @@ const Hero = () => {
     );
 
     return (
-        <div className='space-y-8 mt-24  '>
+        <div className='space-y-8 flex items-center justify-center flex-col h-[84vh] '>
             <Particles
                 id='tsparticles'
                 init={particlesInit}
@@ -142,34 +202,71 @@ const Hero = () => {
                     detectRetina: true,
                 }}
             />
-            <div className='space-y-2 text-center'>
-                <h1 className='text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none'>
-                    Welcome to my portfolio
-                </h1>
-                <p className='max-w-[600px] mx-auto text-zinc-500 md:text-xl '>
-                    Im a front end developer with a passion for building
-                    beautiful user interfaces.
-                </p>
+            <div className='space-y-2 text-center '>
+                <div
+                    className='opacity-0  transition-all duration-200 ease-out  '
+                    ref={title}
+                >
+                    <h1 className='text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none'>
+                        Welcome to my portfolio
+                    </h1>
+                </div>
+
+                <div
+                    className='opacity-0  transition-all duration-200 ease-out  '
+                    ref={subtitle}
+                >
+                    <p className='max-w-[600px] mx-auto text-zinc-500 md:text-xl '>
+                        Im a front end developer with a passion for building
+                        beautiful user interfaces.
+                    </p>
+                </div>
             </div>
 
             <div className='flex items-center justify-center gap-2'>
-                <Button variant={'outline'}>Ver projeto</Button>
-                <Button variant={'outline'}>Contato</Button>
+                <div
+                    className='opacity-0  transition-all duration-200 ease-out  '
+                    ref={button1}
+                >
+                    <Button className='w-[110px]' variant={'outline'}>
+                        Ver projeto
+                    </Button>
+                </div>
+
+                <div
+                    className='opacity-0  transition-all duration-200 ease-out  '
+                    ref={button2}
+                >
+                    <Button className='w-[110px]' variant={'outline'}>
+                        Contato
+                    </Button>
+                </div>
             </div>
 
             <div className='flex items-center justify-center gap-2'>
-                <Link
-                    className='text-zinc-500 hover:text-foreground transition-colors'
-                    href={'/'}
+                <div
+                    className='opacity-0 translate-y-[30px] transition-all duration-200 ease-out  '
+                    ref={link1}
                 >
-                    <Github size={20} />
-                </Link>
-                <Link
-                    className='text-zinc-500 hover:text-foreground transition-colors'
-                    href={'/'}
+                    <Link
+                        className='text-zinc-500 hover:text-foreground transition-colors'
+                        href={'/'}
+                    >
+                        <Github size={20} />
+                    </Link>
+                </div>
+
+                <div
+                    className='opacity-0 translate-y-[30px] transition-all duration-200 ease-out  '
+                    ref={link2}
                 >
-                    <Linkedin size={20} />
-                </Link>
+                    <Link
+                        className='text-zinc-500 hover:text-foreground transition-colors'
+                        href={'/'}
+                    >
+                        <Linkedin size={20} />
+                    </Link>
+                </div>
             </div>
         </div>
     );
