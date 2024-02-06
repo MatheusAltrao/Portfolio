@@ -65,3 +65,11 @@
 h2 {
     @apply text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none;
 }
+
+.description {
+    @apply text-sm md:text-center md:max-w-[600px] md:mx-auto text-zinc-500 md:text-xl;
+}
+
+section {
+    @apply mb-32 w-full bg-zinc-950 px-4 py-16 md:py-24;
+}

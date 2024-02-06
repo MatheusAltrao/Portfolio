@@ -6,7 +6,7 @@ import Particles from 'react-tsparticles';
 import { loadSlim } from 'tsparticles-slim';
 
 import { Github, Linkedin } from 'lucide-react';
-import { Button } from './ui/button';
+import { Button } from '../ui/button';
 import Link from 'next/link';
 import { Container, Engine } from 'tsparticles-engine';
 import { gsap } from 'gsap';
@@ -84,7 +84,10 @@ const Hero = () => {
     );
 
     return (
-        <div className='space-y-8 flex items-center justify-center flex-col h-[84vh] '>
+        <section
+            id='hero'
+            className='space-y-4 flex items-center justify-center flex-col h-[90vh]  '
+        >
             <Particles
                 id='tsparticles'
                 init={particlesInit}
@@ -208,7 +211,7 @@ const Hero = () => {
                     ref={title}
                 >
                     <h1 className='text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none'>
-                        Welcome to my portfolio
+                        Conheça o meu portfólio
                     </h1>
                 </div>
 
@@ -217,29 +220,9 @@ const Hero = () => {
                     ref={subtitle}
                 >
                     <p className='max-w-[600px] mx-auto text-zinc-500 md:text-xl '>
-                        Im a front end developer with a passion for building
-                        beautiful user interfaces.
+                        Sou um desenvolvedor Fron-End, com uma paixão em
+                        construir boas interfaces.
                     </p>
-                </div>
-            </div>
-
-            <div className='flex items-center justify-center gap-2'>
-                <div
-                    className='opacity-0  transition-all duration-200 ease-out  '
-                    ref={button1}
-                >
-                    <Button className='w-[110px]' variant={'outline'}>
-                        Ver projeto
-                    </Button>
-                </div>
-
-                <div
-                    className='opacity-0  transition-all duration-200 ease-out  '
-                    ref={button2}
-                >
-                    <Button className='w-[110px]' variant={'outline'}>
-                        Contato
-                    </Button>
                 </div>
             </div>
 
@@ -249,8 +232,9 @@ const Hero = () => {
                     ref={link1}
                 >
                     <Link
+                        target='_blank'
                         className='text-zinc-500 hover:text-foreground transition-colors'
-                        href={'/'}
+                        href={'https://github.com/MatheusAltrao'}
                     >
                         <Github size={20} />
                     </Link>
@@ -261,14 +245,15 @@ const Hero = () => {
                     ref={link2}
                 >
                     <Link
+                        target='_blank'
                         className='text-zinc-500 hover:text-foreground transition-colors'
-                        href={'/'}
+                        href={'https://www.linkedin.com/in/matheus-altrao/'}
                     >
                         <Linkedin size={20} />
                     </Link>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

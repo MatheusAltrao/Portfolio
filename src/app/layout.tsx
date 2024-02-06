@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
+import { url } from 'inspector';
 
 const poppins = Poppins({
     subsets: ['latin'],
@@ -9,7 +10,14 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
     title: 'Matheus',
-    description: 'Matheus dev Front-end',
+    description: 'Matheus Dev Front-End',
+    icons: {
+        icon: [
+            {
+                url: '/logoWhite.png',
+            },
+        ],
+    },
 };
 
 export default function RootLayout({
