@@ -3,7 +3,11 @@
 import { gsap } from 'gsap';
 import { useRef, useLayoutEffect } from 'react';
 
-const Preloading = () => {
+interface PreloadingProps {
+    setIsPreLoading: (v: boolean) => void;
+}
+
+const Preloading = ({ setIsPreLoading }: PreloadingProps) => {
     const area = useRef<HTMLDivElement | null>(null);
     const barBg = useRef<HTMLDivElement | null>(null);
     const content = useRef<HTMLDivElement | null>(null);
@@ -36,6 +40,9 @@ const Preloading = () => {
                     display: 'none',
                     delay: 7,
                     duration: 0.7,
+                    onComplete: () => {
+                        setIsPreLoading(false);
+                    },
                 });
             },
 
@@ -45,7 +52,7 @@ const Preloading = () => {
         return () => {
             ctx.revert();
         };
-    }, []);
+    }, [setIsPreLoading]);
 
     return (
         <div

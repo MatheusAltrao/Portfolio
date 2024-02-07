@@ -10,16 +10,26 @@ import Skills from '@/components/sections/Skills';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
     useEffect(() => {
         AOS.init();
     }, []);
 
+    const [isPreloading, setIsPreLoading] = useState(true);
+
+    console.log(isPreloading);
+
     return (
-        <div className='min-h-screen w-full '>
-            <Preloading />
+        <div
+            className={` w-screen overflow-x-hidden ${
+                isPreloading
+                    ? 'h-screen  overflow-hidden overflow-x-hidden overflow-y-hidden'
+                    : 'min-h-screen'
+            }  `}
+        >
+            <Preloading setIsPreLoading={setIsPreLoading} />
             <Header />
 
             <div className='w-full max-w-[1200px] mx-auto px-2 '>

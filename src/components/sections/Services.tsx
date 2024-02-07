@@ -87,8 +87,8 @@ const Services = () => {
                     </div>
                 </div>
 
-                <div className='flex items-center gap-8  flex-col-reverse md:flex-row-reverse justify-between'>
-                    <div
+                <div className='flex items-center gap-8  flex-col-reverse md:flex-row-reverse justify-between overflow-hidden'>
+                    {/*  <div
                         data-aos='fade-left'
                         className='w-full max-w-[450px] space-y-8'
                     >
@@ -129,7 +129,7 @@ const Services = () => {
                                 </Button>
                             </a>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className='w-full overflow-hidden flex items-center justify-center lg:justify-start '>
                         <Image
@@ -142,10 +142,10 @@ const Services = () => {
                     </div>
                 </div>
 
-                <div className='flex items-center gap-8  flex-col-reverse md:flex-row justify-between'>
+                <div className='flex items-center gap-8  flex-col-reverse md:flex-row justify-between overflow-hidden'>
                     <div
                         data-aos='fade-right'
-                        className='w-full max-w-[450px] space-y-8'
+                        className='w-full max-w-[450px] space-y-8 '
                     >
                         <div className='space-y-4'>
                             <h2>UI / UX</h2>
@@ -192,7 +192,7 @@ const Services = () => {
                         <Image
                             alt=''
                             src={Uiux}
-                            className=' h-auto    w-full max-w-[450px] rounded-lg  '
+                            className=' h-auto w-full max-w-[450px] rounded-lg  '
                             priority
                             sizes='(max-width: 768px) 100vw, (max-width:1200px) 50vw,33vw '
                         />

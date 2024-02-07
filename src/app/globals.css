@@ -41,7 +41,7 @@
         @apply border-border antialiased scroll-smooth;
     }
     body {
-        @apply bg-background text-foreground text-base;
+        @apply bg-background text-foreground text-base overflow-x-hidden;
     }
 }
 
