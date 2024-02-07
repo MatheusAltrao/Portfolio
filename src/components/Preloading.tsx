@@ -57,7 +57,7 @@ const Preloading = ({ setIsPreLoading }: PreloadingProps) => {
     return (
         <div
             ref={area}
-            className='w-full  fixed overflow-hidden z-40 top-0 left-0 h-screen bg-black flex items-center justify-center '
+            className='w-full h-[90vh]  fixed overflow-hidden z-40 top-0 left-0  bg-black flex items-center justify-center '
         >
             <div
                 ref={content}
