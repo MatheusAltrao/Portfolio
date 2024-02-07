@@ -19,8 +19,6 @@ export default function Home() {
 
     const [isPreloading, setIsPreLoading] = useState(true);
 
-    console.log(isPreloading);
-
     return (
         <div
             className={` w-screen overflow-x-hidden ${
