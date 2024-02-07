@@ -80,9 +80,9 @@ const Services = () => {
                         data-aos='fade-left'
                         alt=''
                         src={Webdesign}
-                        className='w-full max-w-[450px] h-[400px] rounded-lg '
-                        width={450}
-                        height={400}
+                        className='h-[350px] lg:h-[400px] max-w-[450px] rounded-lg relative w-full'
+                        priority
+                        sizes='(max-width: 768px) w-full, 450px '
                     />
                 </div>
 
@@ -134,9 +134,9 @@ const Services = () => {
                         data-aos='fade-right'
                         alt=''
                         src={Programing}
-                        className='w-full max-w-[450px] h-[400px] rounded-lg'
-                        width={450}
-                        height={400}
+                        className='h-[350px] lg:h-[400px] max-w-[450px] rounded-lg relative w-full'
+                        priority
+                        sizes='(max-width: 768px) w-full, 450px '
                     />
                 </div>
 
@@ -190,9 +190,9 @@ const Services = () => {
                         data-aos='fade-left'
                         alt=''
                         src={Uiux}
-                        className='w-full max-w-[450px] h-[450px] rounded-lg '
-                        width={450}
-                        height={400}
+                        className='h-[350px] lg:h-[400px] max-w-[450px] rounded-lg relative w-full'
+                        priority
+                        sizes='(max-width: 768px) w-full, 450px '
                     />
                 </div>
             </div>
