@@ -76,14 +76,15 @@ const Services = () => {
                         </div>
                     </div>
 
-                    <Image
-                        data-aos='fade-left'
-                        alt=''
-                        src={Webdesign}
-                        className='h-[350px] lg:h-[400px] max-w-[450px] rounded-lg relative w-full'
-                        priority
-                        sizes='(max-width: 768px) w-full, 450px '
-                    />
+                    <div className='w-full overflow-hidden flex items-center justify-center lg:justify-end '>
+                        <Image
+                            alt=''
+                            src={Webdesign}
+                            className='h-[350px] lg:h-[400px] max-w-[450px] rounded-lg relative w-full'
+                            priority
+                            sizes='(max-width: 768px) w-full, 450px '
+                        />
+                    </div>
                 </div>
 
                 <div className='flex items-center gap-8  flex-col-reverse md:flex-row-reverse justify-between'>
@@ -130,14 +131,15 @@ const Services = () => {
                         </div>
                     </div>
 
-                    <Image
-                        data-aos='fade-right'
-                        alt=''
-                        src={Programing}
-                        className='h-[350px] lg:h-[400px] max-w-[450px] rounded-lg relative w-full'
-                        priority
-                        sizes='(max-width: 768px) w-full, 450px '
-                    />
+                    <div className='w-full overflow-hidden flex items-center justify-center lg:justify-end '>
+                        <Image
+                            alt=''
+                            src={Programing}
+                            className='h-[350px] lg:h-[400px] max-w-[450px] rounded-lg relative w-full'
+                            priority
+                            sizes='(max-width: 768px) w-full, 450px '
+                        />
+                    </div>
                 </div>
 
                 <div className='flex items-center gap-8  flex-col-reverse md:flex-row justify-between'>
@@ -186,14 +188,15 @@ const Services = () => {
                         </div>
                     </div>
 
-                    <Image
-                        data-aos='fade-left'
-                        alt=''
-                        src={Uiux}
-                        className='h-[350px] lg:h-[400px] max-w-[450px] rounded-lg relative w-full'
-                        priority
-                        sizes='(max-width: 768px) w-full, 450px '
-                    />
+                    <div className='w-full overflow-hidden flex items-center justify-center lg:justify-end '>
+                        <Image
+                            alt=''
+                            src={Uiux}
+                            className='h-[350px] lg:h-[400px] max-w-[450px] rounded-lg relative w-full'
+                            priority
+                            sizes='(max-width: 768px) w-full, 450px '
+                        />
+                    </div>
                 </div>
             </div>
         </section>
