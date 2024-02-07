@@ -80,9 +80,9 @@ const Services = () => {
                         <Image
                             alt=''
                             src={Webdesign}
-                            className='h-[350px] lg:h-[400px] max-w-[450px] rounded-lg relative w-full'
+                            className=' h-auto  w-full max-w-[450px] rounded-lg  '
                             priority
-                            sizes='(max-width: 768px) w-full, 450px '
+                            sizes='(max-width: 768px) 100vw, (max-width:1200px) 50vw,33vw '
                         />
                     </div>
                 </div>
@@ -131,13 +131,13 @@ const Services = () => {
                         </div>
                     </div>
 
-                    <div className='w-full overflow-hidden flex items-center justify-center lg:justify-end '>
+                    <div className='w-full overflow-hidden flex items-center justify-center lg:justify-start '>
                         <Image
                             alt=''
                             src={Programing}
-                            className='h-[350px] lg:h-[400px] max-w-[450px] rounded-lg relative w-full'
+                            className=' h-auto  w-full max-w-[450px] rounded-lg  '
                             priority
-                            sizes='(max-width: 768px) w-full, 450px '
+                            sizes='(max-width: 768px) 100vw, (max-width:1200px) 50vw,33vw '
                         />
                     </div>
                 </div>
@@ -188,13 +188,13 @@ const Services = () => {
                         </div>
                     </div>
 
-                    <div className='w-full overflow-hidden flex items-center justify-center lg:justify-end '>
+                    <div className='w-full overflow-hidden flex items-center justify-center lg:justify-end  '>
                         <Image
                             alt=''
                             src={Uiux}
-                            className='h-[350px] lg:h-[400px] max-w-[450px] rounded-lg relative w-full'
+                            className=' h-auto    w-full max-w-[450px] rounded-lg  '
                             priority
-                            sizes='(max-width: 768px) w-full, 450px '
+                            sizes='(max-width: 768px) 100vw, (max-width:1200px) 50vw,33vw '
                         />
                     </div>
                 </div>
