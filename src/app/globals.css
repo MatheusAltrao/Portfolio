@@ -71,5 +71,5 @@ h2 {
 }
 
 section {
-    @apply mb-32 w-full bg-zinc-950 px-4 py-16 md:py-24;
+    @apply mb-32 w-full bg-zinc-950 px-4 py-10 md:py-24;
 }

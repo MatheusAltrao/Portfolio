@@ -12,7 +12,7 @@ const About = () => {
 
     return (
         <section id='about'>
-            <div className='flex items-center justify-between flex-col md:flex-row gap-4'>
+            <div className='flex items-center justify-between flex-col-reverse md:flex-row gap-4'>
                 <div data-aos='fade-right' className='space-y-4'>
                     <h2>Sobre mim</h2>
                     <p className='max-w-[600px] text-zinc-500 md:text-xl '>

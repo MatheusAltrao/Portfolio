@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer>
             <div className='w-full max-w-[1200px] mx-auto bg-zinc-950 border-t md:px-0'>
-                <div className='flex items-center justify-between py-2'>
+                <div className='flex items-center justify-between py-4'>
                     <div className=' flex  justify-center flex-col gap-4 '>
                         <div>
                             <p className='font-semibold '>Matheus </p>
@@ -15,8 +15,8 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className='flex flex-col lg:flex-row lg:items-center items-start gap-2 lg:gap-4'>
-                        <div className=' flex items-center gap-2'>
+                    <div className='flex flex-row lg:items-center items-start gap-2 lg:gap-4'>
+                        <div className=' hidden lg:flex items-center gap-2'>
                             <Link
                                 target='_blank'
                                 className='text-zinc-500 hover:text-foreground transition-colors'
