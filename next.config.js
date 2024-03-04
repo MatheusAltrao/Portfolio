@@ -25,6 +25,11 @@ const nextConfig = {
                 hostname: 'myportfolio-omega-nine.vercel.app',
             },
 
+            {
+                protocol: 'https',
+                hostname: 'games-indol-five.vercel.app',
+            },
+
 
 
         ],

@@ -1,18 +1,10 @@
 'use client';
-import LogoFigma from '../../../public/techs/logoFigma.svg';
-import LogoFirebase from '../../../public/techs/logoFirebase.svg';
-import LogoGit from '../../../public/techs/logoGit.svg';
-import LogoNextjs from '../../../public/techs/logoNextjs.svg';
-import LogoSass from '../../../public/techs/logoSass.svg';
-import LogoTailwind from '../../../public/techs/logoTailwind.svg';
-import LogoTs from '../../../public/techs/logoTs.svg';
-import LogoReactjs from '../../../public/techs/logoReactjs.svg';
-import LogoHtml from '../../../public/techs/logoHtml.svg';
-import LogoCss from '../../../public/techs/logoCss.svg';
-import LogoJavascript from '../../../public/techs/logoJavascript.svg';
-import LogoGsap from '../../../public/techs/logoGsap.svg';
+
+import * as imports from './imports';
+
 import Image from 'next/image';
-import { Computer, Shield, User } from 'lucide-react';
+
+import { Computer, Pyramid, Shield, User } from 'lucide-react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { useEffect } from 'react';
@@ -27,9 +19,7 @@ const Skills = () => {
         <section id='skills'>
             <div className='flex items-start justify-between flex-col lg:flex-row gap-8'>
                 <div data-aos='fade-right' className='max-w-[350px]'>
-                    <h3 className=' text-2xl font-bold  '>
-                        Minhas Tecnologias
-                    </h3>
+                    <h3 className=' text-2xl font-bold  '>Minhas Tecnologias</h3>
                     <p className='text-zinc-500'>
                         Essas são as ferramentas mais utilizadas por mim.
                     </p>
@@ -41,7 +31,7 @@ const Skills = () => {
                         image={
                             <Image
                                 className='w-[50px] h-[50px] '
-                                src={LogoHtml}
+                                src={imports.LogoHtml}
                                 alt=''
                                 width={50}
                                 height={50}
@@ -55,7 +45,7 @@ const Skills = () => {
                         image={
                             <Image
                                 className='w-[50px] h-[50px] '
-                                src={LogoCss}
+                                src={imports.LogoCss}
                                 alt=''
                                 width={50}
                                 height={50}
@@ -69,7 +59,7 @@ const Skills = () => {
                         image={
                             <Image
                                 className='w-[50px] h-[50px] '
-                                src={LogoSass}
+                                src={imports.LogoSass}
                                 alt=''
                                 width={50}
                                 height={50}
@@ -83,7 +73,7 @@ const Skills = () => {
                         image={
                             <Image
                                 className='w-[50px] h-[50px] '
-                                src={LogoTailwind}
+                                src={imports.LogoTailwind}
                                 alt=''
                                 width={50}
                                 height={50}
@@ -97,7 +87,7 @@ const Skills = () => {
                         image={
                             <Image
                                 className='w-[50px] h-[50px] '
-                                src={LogoJavascript}
+                                src={imports.LogoJavascript}
                                 alt=''
                                 width={50}
                                 height={50}
@@ -111,7 +101,7 @@ const Skills = () => {
                         image={
                             <Image
                                 className='w-[50px] h-[50px] '
-                                src={LogoTs}
+                                src={imports.LogoTs}
                                 alt=''
                                 width={50}
                                 height={50}
@@ -125,7 +115,7 @@ const Skills = () => {
                         image={
                             <Image
                                 className='w-[50px] h-[50px] '
-                                src={LogoReactjs}
+                                src={imports.LogoReactjs}
                                 alt=''
                                 width={50}
                                 height={50}
@@ -139,7 +129,7 @@ const Skills = () => {
                         image={
                             <Image
                                 className='w-[50px] h-[50px]'
-                                src={LogoNextjs}
+                                src={imports.LogoNextjs}
                                 alt=''
                                 width={50}
                                 height={50}
@@ -163,7 +153,59 @@ const Skills = () => {
                         image={
                             <Image
                                 className='w-[50px] h-[50px] '
-                                src={LogoFirebase}
+                                src={imports.LogoFirebase}
+                                alt=''
+                                width={50}
+                                height={50}
+                            />
+                        }
+                    />
+
+                    <Tech
+                        delay='1000'
+                        name='MongoDB'
+                        image={
+                            <Image
+                                className='w-[50px] h-[50px] '
+                                src={imports.MongoDB}
+                                alt=''
+                                width={50}
+                                height={50}
+                            />
+                        }
+                    />
+
+                    <Tech
+                        delay='1000'
+                        name='Prisma'
+                        image={
+                            <div className=' h-3.125rem] flex items-center justify-center'>
+                                <Pyramid strokeWidth={1} size={52} />
+                            </div>
+                        }
+                    />
+
+                    <Tech
+                        delay='1000'
+                        name='Axios'
+                        image={
+                            <Image
+                                className='w-[50px] h-[50px] '
+                                src={imports.Axios}
+                                alt=''
+                                width={50}
+                                height={50}
+                            />
+                        }
+                    />
+
+                    <Tech
+                        delay='1000'
+                        name='Docker'
+                        image={
+                            <Image
+                                className='w-[50px] h-[50px] '
+                                src={imports.Docker}
                                 alt=''
                                 width={50}
                                 height={50}
@@ -177,7 +219,7 @@ const Skills = () => {
                         image={
                             <Image
                                 className='w-[50px] h-[50px] '
-                                src={LogoGit}
+                                src={imports.LogoGit}
                                 alt=''
                                 width={50}
                                 height={50}
@@ -191,7 +233,7 @@ const Skills = () => {
                         image={
                             <Image
                                 className='w-[50px] h-[50px] '
-                                src={LogoFigma}
+                                src={imports.LogoFigma}
                                 alt=''
                                 width={50}
                                 height={50}
@@ -225,7 +267,7 @@ const Skills = () => {
                         image={
                             <Image
                                 className='w-[50px] h-[50px] '
-                                src={LogoGsap}
+                                src={imports.LogoGsap}
                                 alt=''
                                 width={50}
                                 height={50}
