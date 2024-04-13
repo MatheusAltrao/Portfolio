@@ -16,23 +16,26 @@ const Skills = () => {
     }, []);
 
     return (
-        <section id='skills'>
-            <div className='flex items-start justify-between flex-col lg:flex-row gap-8'>
-                <div data-aos='fade-right' className='max-w-[350px]'>
-                    <h3 className=' text-2xl font-bold  '>Minhas Tecnologias</h3>
-                    <p className='text-zinc-500'>
+        <section id="skills">
+            <div className="flex items-start justify-between flex-col lg:flex-row gap-8">
+                <div
+                    data-aos="fade-right"
+                    className="max-w-[350px]"
+                >
+                    <h3 className=" text-2xl font-bold  ">Minhas Tecnologias</h3>
+                    <p className="text-zinc-500">
                         Essas são as ferramentas mais utilizadas por mim.
                     </p>
                 </div>
-                <div className='flex items-center justify-start  flex-wrap max-w-[700px] gap-4'>
+                <div className="flex items-center justify-start  flex-wrap max-w-[700px] gap-4">
                     <Tech
-                        delay='100'
-                        name='HTML'
+                        delay="100"
+                        name="HTML"
                         image={
                             <Image
-                                className='w-[50px] h-[50px] '
+                                className="w-[50px] h-[50px] "
                                 src={imports.LogoHtml}
-                                alt=''
+                                alt=""
                                 width={50}
                                 height={50}
                             />
@@ -40,13 +43,13 @@ const Skills = () => {
                     />
 
                     <Tech
-                        delay='200'
-                        name='CSS'
+                        delay="100"
+                        name="CSS"
                         image={
                             <Image
-                                className='w-[50px] h-[50px] '
+                                className="w-[50px] h-[50px] "
                                 src={imports.LogoCss}
-                                alt=''
+                                alt=""
                                 width={50}
                                 height={50}
                             />
@@ -54,13 +57,13 @@ const Skills = () => {
                     />
 
                     <Tech
-                        delay='300'
-                        name='Sass'
+                        delay="100"
+                        name="Sass"
                         image={
                             <Image
-                                className='w-[50px] h-[50px] '
+                                className="w-[50px] h-[50px] "
                                 src={imports.LogoSass}
-                                alt=''
+                                alt=""
                                 width={50}
                                 height={50}
                             />
@@ -68,13 +71,13 @@ const Skills = () => {
                     />
 
                     <Tech
-                        delay='400'
-                        name='Tailwind'
+                        delay="100"
+                        name="Tailwind"
                         image={
                             <Image
-                                className='w-[50px] h-[50px] '
+                                className="w-[50px] h-[50px] "
                                 src={imports.LogoTailwind}
-                                alt=''
+                                alt=""
                                 width={50}
                                 height={50}
                             />
@@ -82,13 +85,13 @@ const Skills = () => {
                     />
 
                     <Tech
-                        delay='500'
-                        name='Javascript'
+                        delay="100"
+                        name="Javascript"
                         image={
                             <Image
-                                className='w-[50px] h-[50px] '
+                                className="w-[50px] h-[50px] "
                                 src={imports.LogoJavascript}
-                                alt=''
+                                alt=""
                                 width={50}
                                 height={50}
                             />
@@ -96,13 +99,13 @@ const Skills = () => {
                     />
 
                     <Tech
-                        delay='600'
-                        name='Typescript'
+                        delay="100"
+                        name="Typescript"
                         image={
                             <Image
-                                className='w-[50px] h-[50px] '
+                                className="w-[50px] h-[50px] "
                                 src={imports.LogoTs}
-                                alt=''
+                                alt=""
                                 width={50}
                                 height={50}
                             />
@@ -110,13 +113,13 @@ const Skills = () => {
                     />
 
                     <Tech
-                        delay='700'
-                        name='ReactJS'
+                        delay="100"
+                        name="ReactJS"
                         image={
                             <Image
-                                className='w-[50px] h-[50px] '
+                                className="w-[50px] h-[50px] "
                                 src={imports.LogoReactjs}
-                                alt=''
+                                alt=""
                                 width={50}
                                 height={50}
                             />
@@ -124,13 +127,13 @@ const Skills = () => {
                     />
 
                     <Tech
-                        delay='800'
-                        name='NextJS'
+                        delay="100"
+                        name="NextJS"
                         image={
                             <Image
-                                className='w-[50px] h-[50px]'
+                                className="w-[50px] h-[50px]"
                                 src={imports.LogoNextjs}
-                                alt=''
+                                alt=""
                                 width={50}
                                 height={50}
                             />
@@ -138,23 +141,26 @@ const Skills = () => {
                     />
 
                     <Tech
-                        delay='900'
-                        name='Next Auth'
+                        delay="100"
+                        name="Next Auth"
                         image={
-                            <div className=' h-3.125rem] flex items-center justify-center'>
-                                <Shield strokeWidth={1} size={52} />
+                            <div className=" h-3.125rem] flex items-center justify-center">
+                                <Shield
+                                    strokeWidth={1}
+                                    size={52}
+                                />
                             </div>
                         }
                     />
 
                     <Tech
-                        delay='1000'
-                        name='Firebase'
+                        delay="100"
+                        name="Firebase"
                         image={
                             <Image
-                                className='w-[50px] h-[50px] '
+                                className="w-[50px] h-[50px] "
                                 src={imports.LogoFirebase}
-                                alt=''
+                                alt=""
                                 width={50}
                                 height={50}
                             />
@@ -162,13 +168,13 @@ const Skills = () => {
                     />
 
                     <Tech
-                        delay='1000'
-                        name='MongoDB'
+                        delay="100"
+                        name="MongoDB"
                         image={
                             <Image
-                                className='w-[50px] h-[50px] '
+                                className="w-[50px] h-[50px] "
                                 src={imports.MongoDB}
-                                alt=''
+                                alt=""
                                 width={50}
                                 height={50}
                             />
@@ -176,23 +182,26 @@ const Skills = () => {
                     />
 
                     <Tech
-                        delay='1000'
-                        name='Prisma'
+                        delay="100"
+                        name="Prisma"
                         image={
-                            <div className=' h-3.125rem] flex items-center justify-center'>
-                                <Pyramid strokeWidth={1} size={52} />
+                            <div className=" h-3.125rem] flex items-center justify-center">
+                                <Pyramid
+                                    strokeWidth={1}
+                                    size={52}
+                                />
                             </div>
                         }
                     />
 
                     <Tech
-                        delay='1000'
-                        name='Axios'
+                        delay="100"
+                        name="Axios"
                         image={
                             <Image
-                                className='w-[50px] h-[50px] '
+                                className="w-[50px] h-[50px] "
                                 src={imports.Axios}
-                                alt=''
+                                alt=""
                                 width={50}
                                 height={50}
                             />
@@ -200,13 +209,13 @@ const Skills = () => {
                     />
 
                     <Tech
-                        delay='1000'
-                        name='Docker'
+                        delay="100"
+                        name="Docker"
                         image={
                             <Image
-                                className='w-[50px] h-[50px] '
+                                className="w-[50px] h-[50px] "
                                 src={imports.Docker}
-                                alt=''
+                                alt=""
                                 width={50}
                                 height={50}
                             />
@@ -214,13 +223,13 @@ const Skills = () => {
                     />
 
                     <Tech
-                        delay='1100'
-                        name='Git'
+                        delay="100"
+                        name="Git"
                         image={
                             <Image
-                                className='w-[50px] h-[50px] '
+                                className="w-[50px] h-[50px] "
                                 src={imports.LogoGit}
-                                alt=''
+                                alt=""
                                 width={50}
                                 height={50}
                             />
@@ -228,13 +237,13 @@ const Skills = () => {
                     />
 
                     <Tech
-                        delay='1200'
-                        name='Figma'
+                        delay="100"
+                        name="Figma"
                         image={
                             <Image
-                                className='w-[50px] h-[50px] '
+                                className="w-[50px] h-[50px] "
                                 src={imports.LogoFigma}
-                                alt=''
+                                alt=""
                                 width={50}
                                 height={50}
                             />
@@ -242,33 +251,39 @@ const Skills = () => {
                     />
 
                     <Tech
-                        delay='1300'
-                        name='UI'
+                        delay="100"
+                        name="UI"
                         image={
-                            <div className=' h-3.125rem] flex items-center justify-center'>
-                                <Computer strokeWidth={1} size={52} />
+                            <div className=" h-3.125rem] flex items-center justify-center">
+                                <Computer
+                                    strokeWidth={1}
+                                    size={52}
+                                />
                             </div>
                         }
                     />
 
                     <Tech
-                        delay='1400'
-                        name='UX'
+                        delay="100"
+                        name="UX"
                         image={
-                            <div className=' h-3.125rem] flex items-center justify-center'>
-                                <User strokeWidth={1} size={52} />
+                            <div className=" h-3.125rem] flex items-center justify-center">
+                                <User
+                                    strokeWidth={1}
+                                    size={52}
+                                />
                             </div>
                         }
                     />
 
                     <Tech
-                        delay='1500'
-                        name='GSAP'
+                        delay="100"
+                        name="GSAP"
                         image={
                             <Image
-                                className='w-[50px] h-[50px] '
+                                className="w-[50px] h-[50px] "
                                 src={imports.LogoGsap}
-                                alt=''
+                                alt=""
                                 width={50}
                                 height={50}
                             />

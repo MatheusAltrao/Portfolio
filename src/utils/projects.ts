@@ -1,5 +1,12 @@
 const projects = [
     {
+        name: 'Holiday Plan',
+        description: 'Organize as suas férias com Holiday Plan. ',
+        image: 'https://i.pinimg.com/originals/51/51/c1/5151c1af1135cbb166eebf1b96e8a85e.png',
+        link: ' https://holiday-plan.vercel.app/',
+    },
+
+    {
         name: 'Blog',
         description: 'Conheça mais sobre mim, conto um pouco do meu dia a dia, esse é o meu blog. ',
         image: 'https://i.pinimg.com/originals/69/80/f7/6980f7af3e36d70c7b3b6d92d5cdbfc8.jpg',
