@@ -1,12 +1,10 @@
 'use client';
 
-import * as imports from './imports';
-
 import Image from 'next/image';
 
+import { techs } from '@/utils/techs';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Computer, Pyramid, Shield, User } from 'lucide-react';
 import { useEffect } from 'react';
 import Tech from '../Tech';
 
@@ -27,267 +25,26 @@ const Skills = () => {
         </div>
 
         <div className="grid grid-cols-3 lg:grid-cols-4 gap-2 w-full">
-          <Tech
-            delay="100"
-            name="HTML"
-            image={
-              <Image
-                className="w-[50px] h-[50px] "
-                src={imports.LogoHtml}
-                alt=""
-                width={50}
-                height={50}
-              />
-            }
-          />
-
-          <Tech
-            delay="100"
-            name="CSS"
-            image={
-              <Image
-                className="w-[50px] h-[50px] "
-                src={imports.LogoCss}
-                alt=""
-                width={50}
-                height={50}
-              />
-            }
-          />
-
-          <Tech
-            delay="100"
-            name="Sass"
-            image={
-              <Image
-                className="w-[50px] h-[50px] "
-                src={imports.LogoSass}
-                alt=""
-                width={50}
-                height={50}
-              />
-            }
-          />
-
-          <Tech
-            delay="100"
-            name="Tailwind"
-            image={
-              <Image
-                className="w-[50px] h-[50px] "
-                src={imports.LogoTailwind}
-                alt=""
-                width={50}
-                height={50}
-              />
-            }
-          />
-
-          <Tech
-            delay="100"
-            name="Javascript"
-            image={
-              <Image
-                className="w-[50px] h-[50px] "
-                src={imports.LogoJavascript}
-                alt=""
-                width={50}
-                height={50}
-              />
-            }
-          />
-
-          <Tech
-            delay="100"
-            name="Typescript"
-            image={
-              <Image
-                className="w-[50px] h-[50px] "
-                src={imports.LogoTs}
-                alt=""
-                width={50}
-                height={50}
-              />
-            }
-          />
-
-          <Tech
-            delay="100"
-            name="ReactJS"
-            image={
-              <Image
-                className="w-[50px] h-[50px] "
-                src={imports.LogoReactjs}
-                alt=""
-                width={50}
-                height={50}
-              />
-            }
-          />
-
-          <Tech
-            delay="100"
-            name="NextJS"
-            image={
-              <Image
-                className="w-[50px] h-[50px]"
-                src={imports.LogoNextjs}
-                alt=""
-                width={50}
-                height={50}
-              />
-            }
-          />
-
-          <Tech
-            delay="100"
-            name="Next Auth"
-            image={
-              <div className=" h-3.125rem] flex items-center justify-center">
-                <Shield
-                  strokeWidth={1}
-                  size={52}
-                />
-              </div>
-            }
-          />
-
-          <Tech
-            delay="100"
-            name="Firebase"
-            image={
-              <Image
-                className="w-[50px] h-[50px] "
-                src={imports.LogoFirebase}
-                alt=""
-                width={50}
-                height={50}
-              />
-            }
-          />
-
-          <Tech
-            delay="100"
-            name="MongoDB"
-            image={
-              <Image
-                className="w-[50px] h-[50px] "
-                src={imports.MongoDB}
-                alt=""
-                width={50}
-                height={50}
-              />
-            }
-          />
-
-          <Tech
-            delay="100"
-            name="Prisma"
-            image={
-              <div className=" h-3.125rem] flex items-center justify-center">
-                <Pyramid
-                  strokeWidth={1}
-                  size={52}
-                />
-              </div>
-            }
-          />
-
-          <Tech
-            delay="100"
-            name="Axios"
-            image={
-              <Image
-                className="w-[50px] h-[50px] "
-                src={imports.Axios}
-                alt=""
-                width={50}
-                height={50}
-              />
-            }
-          />
-
-          <Tech
-            delay="100"
-            name="Docker"
-            image={
-              <Image
-                className="w-[50px] h-[50px] "
-                src={imports.Docker}
-                alt=""
-                width={50}
-                height={50}
-              />
-            }
-          />
-
-          <Tech
-            delay="100"
-            name="Git"
-            image={
-              <Image
-                className="w-[50px] h-[50px] "
-                src={imports.LogoGit}
-                alt=""
-                width={50}
-                height={50}
-              />
-            }
-          />
-
-          <Tech
-            delay="100"
-            name="Figma"
-            image={
-              <Image
-                className="w-[50px] h-[50px] "
-                src={imports.LogoFigma}
-                alt=""
-                width={50}
-                height={50}
-              />
-            }
-          />
-
-          <Tech
-            delay="100"
-            name="UI"
-            image={
-              <div className=" h-3.125rem] flex items-center justify-center">
-                <Computer
-                  strokeWidth={1}
-                  size={52}
-                />
-              </div>
-            }
-          />
-
-          <Tech
-            delay="100"
-            name="UX"
-            image={
-              <div className=" h-3.125rem] flex items-center justify-center">
-                <User
-                  strokeWidth={1}
-                  size={52}
-                />
-              </div>
-            }
-          />
-
-          <Tech
-            delay="100"
-            name="GSAP"
-            image={
-              <Image
-                className="w-[50px] h-[50px] "
-                src={imports.LogoGsap}
-                alt=""
-                width={50}
-                height={50}
-              />
-            }
-          />
+          {techs.map((tech) => (
+            <Tech
+              key={tech.id}
+              delay={tech.delay}
+              name={tech.name}
+              image={
+                tech.type == 'image' ? (
+                  <Image
+                    className="w-[50px] h-[50px] "
+                    src={tech.image}
+                    alt={tech.name}
+                    width={tech.width}
+                    height={tech.height}
+                  />
+                ) : (
+                  tech.image
+                )
+              }
+            />
+          ))}
         </div>
       </div>
     </section>

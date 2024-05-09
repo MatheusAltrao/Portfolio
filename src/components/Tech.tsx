@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 interface TechProps {
   image: ReactNode;
   name: string;
-  delay: string;
+  delay: number;
 }
 
 const Tech = ({ image, name, delay }: TechProps) => {
