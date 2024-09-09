@@ -9,7 +9,6 @@ import { Github, Linkedin } from 'lucide-react';
 import Link from 'next/link';
 import { useLayoutEffect, useRef } from 'react';
 import { Container, Engine } from 'tsparticles-engine';
-import { BackgroundBeams } from '../ui/background-beams';
 
 const Hero = () => {
   const title = useRef<HTMLDivElement | null>(null);
@@ -201,7 +200,6 @@ const Hero = () => {
                 }}
             /> */}
 
-      <BackgroundBeams />
       <div className="space-y-2 text-center ">
         <div
           className="opacity-0  transition-all duration-200 ease-out  "
