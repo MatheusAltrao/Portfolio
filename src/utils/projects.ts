@@ -3,7 +3,7 @@ const projects = [
     name: 'FSW Barber',
     description: 'um sistema de agendamento de serviços para barbearias!',
     image:
-      'https://camo.githubusercontent.com/33432200eff067824483dcf6cba51910e0ce102e8e3277ac676fc861924ad4e6/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f61332f39622f62382f61333962623834356439373339306430323565636135323634376238383334312e706e67',
+      'https://camo.githubusercontent.com/6db50351bf6ce99e0f59afab77bc5c1df00705213dba896b9043c34b892748d9/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f61332f39622f62382f61333962623834356439373339306430323565636135323634376238383334312e706e67',
     gitHub: 'https://github.com/MatheusAltrao/FSW-barber',
     deploy: 'https://fsw-barber-lemon.vercel.app/',
   },
@@ -21,8 +21,7 @@ const projects = [
     name: 'Olimpíadas',
     description:
       'Este projeto utiliza a API do Codante para fornecer informações atualizadas sobre os Jogos Olímpicos de 2024.',
-    image:
-      'https://media.licdn.com/dms/image/D4D22AQGKQQWVol1K3g/feedshare-shrink_2048_1536/0/1723172661932?e=1726099200&v=beta&t=vSRmnV4AP88MFdQylchmi3_FG3LbcS8eXHVG-3BKZ74',
+    image: 'https://i.pinimg.com/736x/88/1c/a0/881ca02973a0bb6e594a9538bb2cf9b3.jpg',
     gitHub: 'https://github.com/MatheusAltrao/olimpiadas-api-codante',
     deploy: 'https://olimpiadas-api-codante.vercel.app/',
   },
@@ -39,7 +38,7 @@ const projects = [
     name: 'CodeAI',
     description: 'Faça perguntas para a nossa IA especialista em javascript.',
     image:
-      'https://camo.githubusercontent.com/2b8fa3cc815ad3bbb701b6826029a3641e21fe1fbfab56d510534dbb37082b41/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f35342f31322f38332f35343132383337646334656662376639646563393837383934646632326564392e706e67',
+      'https://camo.githubusercontent.com/1ea74d7662282de20df1bdc1dd4d9a6680a92cbdc0691104bb305b1ccf504f8c/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f35342f31322f38332f35343132383337646334656662376639646563393837383934646632326564392e706e67',
     gitHub: 'https://github.com/MatheusAltrao/CodeAI',
     deploy: 'https://code-ia.vercel.app/',
   },
@@ -121,7 +120,7 @@ const projects = [
     name: ' Relax Chill Code',
     description: 'Cards de músicas para escutar, relaxar e programar.',
     image:
-      'https://camo.githubusercontent.com/5b5b3c11207f6bc521644904327e002db466cd54aeaa5828e5183b993ed95660/68747470733a2f2f692e70696e696d672e636f6d2f353634782f39352f30622f39642f39353062396432626266323431393661656437653736393136653334353463652e6a7067',
+      'https://camo.githubusercontent.com/70aedc28729beb77cfd6ecfe03a6e815f58dff9ff638ef56e66044299453a504/68747470733a2f2f692e70696e696d672e636f6d2f353634782f39352f30622f39642f39353062396432626266323431393661656437653736393136653334353463652e6a7067',
     gitHub: 'https://github.com/MatheusAltrao/PlayerMusic',
     deploy: 'https://player-music-two.vercel.app/',
   },

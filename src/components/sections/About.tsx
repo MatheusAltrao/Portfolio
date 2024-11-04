@@ -19,11 +19,11 @@ const About = () => {
         >
           <h2>Sobre mim</h2>
           <p className="max-w-[600px] text-zinc-500 md:text-xl ">
-            Com uma paixão pelo desenvolvimento Front-end. Tenho experiência sólida em Next.js,
-            Firebase e Tailwind CSS, aproveitando o poder dessas tecnologias para criar interfaces
-            dinâmicas e eficientes.
+            Sou Matheus Altrão, um desenvolvedor com paixão por transformar ideias em interfaces
+            digitais dinâmicas e impactantes. Estou sempre em busca de aprender e evoluir, com o
+            objetivo de levar meu trabalho a um novo patamar e fazer parte de projetos inspiradores.
             <br /> <br /> Me atualizo constantemente para expandir meu conjunto de habilidades e
-            elevar a qualidade do meu trabalho como desenvolvedor Front-end.
+            elevar a qualidade do meu trabalho como desenvolvedor .
           </p>
         </div>
         <div className="relative h-[450px] max-w-[450px] w-full overflow-hidden rounded-md">
