@@ -1,7 +1,7 @@
-import { Github, Globe } from 'lucide-react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from './ui/button';
+import { Github, Globe } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
 interface ProjectProps {
   name: string;
@@ -27,20 +27,19 @@ const Card = ({ project }: CardProps) => {
       />
 
       <div className="p-4 space-y-8 ">
-        <div>
+        <div className="h-20">
           <h3 className="text-lg font-semibold">{project.name}</h3>
-          <p className="text-sm text-zinc-400">{project.description}</p>
+          <p className="text-sm text-zinc-400 line-clamp-3 ">
+            {project.description}
+          </p>
         </div>
 
         <div className="space-y-2">
           <div>
-            <Link
-              target="_blank"
-              href={project.deploy}
-            >
+            <Link target="_blank" href={project.deploy}>
               <Button
                 className="w-full flex items-center gap-2"
-                variant={'outline'}
+                variant={"outline"}
               >
                 Deploy
                 <Globe size={18} />
@@ -48,13 +47,10 @@ const Card = ({ project }: CardProps) => {
             </Link>
           </div>
           <div>
-            <Link
-              target="_blank"
-              href={project.gitHub}
-            >
+            <Link target="_blank" href={project.gitHub}>
               <Button
                 className="w-full flex items-center gap-2"
-                variant={'outline'}
+                variant={"outline"}
               >
                 GitHub
                 <Github size={18} />
