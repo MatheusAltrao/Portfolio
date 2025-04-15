@@ -29,7 +29,7 @@ const projects = [
     description: "Sistema de amigo secreto para você e seus amigos.",
     image: "https://i.pinimg.com/736x/01/d9/dd/01d9dd109d9707391844312273e85bca.jpg",
     gitHub: "https://github.com/MatheusAltrao/web-amigo-secreto-app",
-    deploy: "https://web-amigo-secreto-app.vercel.app/",
+    deploy: "https://www.amigo-secreto.dev/",
   },
 
   {
