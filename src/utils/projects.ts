@@ -1,3 +1,4 @@
+import MthImage from "../../public/projetc-images/mth-ai.png";
 const projects = [
   {
     name: "CASACOR",
@@ -40,21 +41,21 @@ const projects = [
     deploy: "https://bloquinho-de-carnaval-3351.vercel.app/",
   },
 
-  {
+  /*   {
     name: "Kerdos",
     description: "SASS de controle financeiro, com gráficos e relatórios para melhor visualização.",
     image: "https://i.pinimg.com/originals/2c/1d/27/2c1d2765695234ee48c45809ed033bc1.png",
     gitHub: "https://github.com/MatheusAltrao/Kerdos",
     deploy: "https://kerdos.vercel.app/",
-  },
+  }, */
 
-  {
+  /*  {
     name: "Olimpíadas",
     description: "Este projeto utiliza a API do Codante para fornecer informações atualizadas sobre os Jogos Olímpicos de 2024.",
     image: "https://i.pinimg.com/736x/88/1c/a0/881ca02973a0bb6e594a9538bb2cf9b3.jpg",
     gitHub: "https://github.com/MatheusAltrao/olimpiadas-api-codante",
     deploy: "https://olimpiadas-api-codante.vercel.app/",
-  },
+  }, */
 
   /*   {
     name: "Holiday Plan",
@@ -66,12 +67,11 @@ const projects = [
   }, */
 
   {
-    name: "CodeAI",
-    description: "Faça perguntas para a nossa IA especialista em javascript.",
-    image:
-      "https://camo.githubusercontent.com/1ea74d7662282de20df1bdc1dd4d9a6680a92cbdc0691104bb305b1ccf504f8c/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f35342f31322f38332f35343132383337646334656662376639646563393837383934646632326564392e706e67",
-    gitHub: "https://github.com/MatheusAltrao/CodeAI",
-    deploy: "https://code-ia.vercel.app/",
+    name: "MTH AI",
+    description: "Criei o meu próprio ChatGPT, utilizando a API do OpenAI.",
+    image: MthImage,
+    gitHub: "https://github.com/MatheusAltrao/mth-ai",
+    deploy: "https://mth-ai.vercel.app/",
   },
 
   {
