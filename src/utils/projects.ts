@@ -8,12 +8,22 @@ const projects = [
     gitHub: "",
     deploy: "https://casacor.abril.com.br/pt-BR",
   },
+
   {
     name: "ProjectInBio ",
     description: "SASS para criação de links personalizados para o Instagram.",
     image: "https://i.pinimg.com/736x/73/da/01/73da01536e795d72207a46f692aa4983.jpg",
     gitHub: "https://github.com/MatheusAltrao/project-in-bio",
     deploy: "https://project-in-bio-rho.vercel.app/",
+  },
+
+
+  {
+    name: "Kerdos",
+    description: "SASS de controle financeiro, com gráficos e relatórios para melhor visualização.",
+    image: "https://i.pinimg.com/originals/2c/1d/27/2c1d2765695234ee48c45809ed033bc1.png",
+    gitHub: "https://github.com/MatheusAltrao/Kerdos",
+    deploy: "https://kerdos.vercel.app/",
   },
 
   /*   {
@@ -41,13 +51,6 @@ const projects = [
     deploy: "https://bloquinho-de-carnaval-3351.vercel.app/",
   },
 
-  /*   {
-    name: "Kerdos",
-    description: "SASS de controle financeiro, com gráficos e relatórios para melhor visualização.",
-    image: "https://i.pinimg.com/originals/2c/1d/27/2c1d2765695234ee48c45809ed033bc1.png",
-    gitHub: "https://github.com/MatheusAltrao/Kerdos",
-    deploy: "https://kerdos.vercel.app/",
-  }, */
 
   /*  {
     name: "Olimpíadas",
@@ -74,13 +77,13 @@ const projects = [
     deploy: "https://mth-ai.vercel.app/",
   },
 
-  {
-    name: "Blog",
-    description: "Conheça mais sobre mim, conto um pouco  do meu dia a dia e posto lá. ",
-    image: "https://i.pinimg.com/originals/69/80/f7/6980f7af3e36d70c7b3b6d92d5cdbfc8.jpg",
-    gitHub: "https://github.com/MatheusAltrao/Blog",
-    deploy: "https://matheus-blog-oauq.vercel.app/",
-  },
+  /*   {
+      name: "Blog",
+      description: "Conheça mais sobre mim, conto um pouco  do meu dia a dia e posto lá. ",
+      image: "https://i.pinimg.com/originals/69/80/f7/6980f7af3e36d70c7b3b6d92d5cdbfc8.jpg",
+      gitHub: "https://github.com/MatheusAltrao/Blog",
+      deploy: "https://matheus-blog-oauq.vercel.app/",
+    }, */
 
   {
     name: "TaskList",
@@ -89,14 +92,14 @@ const projects = [
     gitHub: "https://github.com/MatheusAltrao/taskList",
     deploy: "https://task-list-eta-six.vercel.app/",
   },
-
-  {
-    name: "Games",
-    description: "Procure os seus games preferidos e veja muitas informações sobre ele.",
-    image: "https://games-indol-five.vercel.app/_next/image?url=https%3A%2F%2Fsujeitoprogramador.com%2Fnext-api%2Ffoto14.png&w=1920&q=100",
-    gitHub: "https://github.com/MatheusAltrao/Games",
-    deploy: "https://games-indol-five.vercel.app/",
-  },
+  /* 
+    {
+      name: "Games",
+      description: "Procure os seus games preferidos e veja muitas informações sobre ele.",
+      image: "https://games-indol-five.vercel.app/_next/image?url=https%3A%2F%2Fsujeitoprogramador.com%2Fnext-api%2Ffoto14.png&w=1920&q=100",
+      gitHub: "https://github.com/MatheusAltrao/Games",
+      deploy: "https://games-indol-five.vercel.app/",
+    }, */
 
   {
     name: "SpiderMan-Miles",
